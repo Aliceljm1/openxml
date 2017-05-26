@@ -50,6 +50,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DocumentFormat.OpenXml\DocumentFormat.OpenXml.csproj">
+      <Project>{e5d39c6a-9067-477e-b0d3-a9419b86e6e5}</Project>
+      <Name>DocumentFormat.OpenXml</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

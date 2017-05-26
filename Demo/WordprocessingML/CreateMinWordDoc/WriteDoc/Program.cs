@@ -11,8 +11,15 @@ namespace WriteDoc
     {
         static void Main(string[] args)
         {
-            WriteToWordDoc(@"E:\TestOpenXML\wordTest1.docx", "Hello World");
+            WriteToWordDoc(@"e:/test/WriteDoc.docx", "刘泾铭");
         }
+
+        /// <summary>
+        ///追加一个加粗的文字 ，
+        ///需要按照openxml的xml约定追加内容
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="txt"></param>
         public static void WriteToWordDoc(string filePath, string txt)
         {
             using (WordprocessingDocument wordProcessingDocument = WordprocessingDocument.Open(filePath, true))
@@ -26,12 +33,11 @@ namespace WriteDoc
                 //Apply bold formatting to the run
                 RunProperties runProperties = run.AppendChild(new RunProperties(new Bold()));
                 run.AppendChild(new Text(txt));
-                run.AppendChild(new Text("Hello world"));
 
-                Paragraph para2 = body.AppendChild(new Paragraph());
-                Run run2 = para.AppendChild(new Run());
-                //apply formatting to the run
-                RunProperties runProperties2 = run2.AppendChild(new RunProperties(new Bold()));
+               //Paragraph para2 = body.AppendChild(new Paragraph());
+               //Run run2 = para.AppendChild(new Run());
+               ////apply formatting to the run
+               //RunProperties runProperties2 = run2.AppendChild(new RunProperties(new Bold()));
             }
         }
     }

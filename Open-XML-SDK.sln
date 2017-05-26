@@ -27,6 +27,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateMinWordDoc", "Demo\Wo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteDoc", "Demo\WordprocessingML\CreateMinWordDoc\WriteDoc\WriteDoc.csproj", "{FF55887C-E1C5-4E0F-92C3-CDAFCC3C5B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateTableInDoc", "Demo\WordprocessingML\CreateMinWordDoc\CreateTableInDoc\CreateTableInDoc.csproj", "{F2AC566D-340C-4FC3-8634-AD600C8F42E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateBasicWord", "Demo\WordprocessingML\CreateMinWordDoc\CreateBasicWord\CreateBasicWord.csproj", "{18ADC45C-F53D-40C2-B000-237796AC1E67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyStyleParagraph", "Demo\WordprocessingML\CreateMinWordDoc\ApplyStyleParagraph\ApplyStyleParagraph.csproj", "{205F9D70-68CC-4EC2-81D3-BEEA6A979609}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A80D09C-FC21-4933-956A-6B46128D2706}"
+	ProjectSection(SolutionItems) = preProject
+		开发纪要.txt = 开发纪要.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,11 +78,31 @@ Global
 		{6088A89B-FE24-4E9C-AAE7-07C52617DB0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6088A89B-FE24-4E9C-AAE7-07C52617DB0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6088A89B-FE24-4E9C-AAE7-07C52617DB0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF55887C-E1C5-4E0F-92C3-CDAFCC3C5B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF55887C-E1C5-4E0F-92C3-CDAFCC3C5B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF55887C-E1C5-4E0F-92C3-CDAFCC3C5B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF55887C-E1C5-4E0F-92C3-CDAFCC3C5B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2AC566D-340C-4FC3-8634-AD600C8F42E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2AC566D-340C-4FC3-8634-AD600C8F42E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2AC566D-340C-4FC3-8634-AD600C8F42E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2AC566D-340C-4FC3-8634-AD600C8F42E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18ADC45C-F53D-40C2-B000-237796AC1E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18ADC45C-F53D-40C2-B000-237796AC1E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18ADC45C-F53D-40C2-B000-237796AC1E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18ADC45C-F53D-40C2-B000-237796AC1E67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205F9D70-68CC-4EC2-81D3-BEEA6A979609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205F9D70-68CC-4EC2-81D3-BEEA6A979609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205F9D70-68CC-4EC2-81D3-BEEA6A979609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205F9D70-68CC-4EC2-81D3-BEEA6A979609}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6088A89B-FE24-4E9C-AAE7-07C52617DB0F} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
+		{FF55887C-E1C5-4E0F-92C3-CDAFCC3C5B6B} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
+		{F2AC566D-340C-4FC3-8634-AD600C8F42E1} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
+		{18ADC45C-F53D-40C2-B000-237796AC1E67} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
+		{205F9D70-68CC-4EC2-81D3-BEEA6A979609} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
 	EndGlobalSection
 EndGlobal

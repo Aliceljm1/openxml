@@ -8,16 +8,21 @@ using DocumentFormat.OpenXml.Wordprocessing;
 using DocumentFormat.OpenXml.Packaging;
 namespace ApplyStyleParagraph
 {
+
+    /// <summary>
+    /// 实现了对于 文本内容添加样式的功能，独立在styles.xml
+    /// </summary>
     class ApplyStyleToParagraphs
     {
         static void Main(string[] args)
         {
-            string fileName = @"D:\Test\wordStyleP.docx";
+            string fileName = @"e:\test\wordStyleP.docx";
             using (WordprocessingDocument doc = WordprocessingDocument.Open(fileName, true))
             {
                 Paragraph p = doc.MainDocumentPart.Document.Body.Descendants<Paragraph>()
-                    .ElementAtOrDefault(1);
-
+                    .FirstOrDefault();
+                    //.ElementAtOrDefault(0); 效果一样
+                
                 if(p == null)
                 {
                     throw new ArgumentOutOfRangeException("p", "Paragraph was not found.");
@@ -36,7 +41,7 @@ namespace ApplyStyleParagraph
             }
             //获取ParagraphProperties
             ParagraphProperties pPr = p.Elements<ParagraphProperties>().First();
-            //获取Styles部件
+            //获取Styles部件 也就是 styles.xml
             StyleDefinitionsPart part = doc.MainDocumentPart.StyleDefinitionsPart;
             //如果Styles部件不存在，创建一个
             if (part == null)
@@ -46,7 +51,7 @@ namespace ApplyStyleParagraph
             }
             else
             {
-                //查看该style是否在文档中，如果没有，添加
+                //查看该styleid是否在文档中，如果没有，添加
                 if(IsStyleIdInDocument(doc, styleid) != true)
                 {
                     //继续用styleName寻找
@@ -91,7 +96,14 @@ namespace ApplyStyleParagraph
                 return false;
             return true;
         }
+        
 
+        /// <summary>
+        /// 斜体加粗，粉色
+        /// </summary>
+        /// <param name="styleDefinitionsPart"></param>
+        /// <param name="styleid"></param>
+        /// <param name="stylename"></param>
         private static void AddNewStyle(StyleDefinitionsPart styleDefinitionsPart, string styleid, string stylename)
         {
             Styles styles = styleDefinitionsPart.Styles;
@@ -127,6 +139,11 @@ namespace ApplyStyleParagraph
             styles.Append(style);
         }
 
+       /// <summary>
+        /// 实际上是 styles.xml 文件
+       /// </summary>
+       /// <param name="doc"></param>
+       /// <returns></returns>
         private static StyleDefinitionsPart AddStylePartToPackage(WordprocessingDocument doc)
         {
             StyleDefinitionsPart part;
