@@ -40,6 +40,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		开发纪要.txt = 开发纪要.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPPT", "Demo\WordprocessingML\CreateMinWordDoc\TestPPT\TestPPT.csproj", "{FF0621F5-E5F7-4D62-AC4D-428AB2E1C1E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +96,10 @@ Global
 		{205F9D70-68CC-4EC2-81D3-BEEA6A979609}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{205F9D70-68CC-4EC2-81D3-BEEA6A979609}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{205F9D70-68CC-4EC2-81D3-BEEA6A979609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0621F5-E5F7-4D62-AC4D-428AB2E1C1E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0621F5-E5F7-4D62-AC4D-428AB2E1C1E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0621F5-E5F7-4D62-AC4D-428AB2E1C1E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0621F5-E5F7-4D62-AC4D-428AB2E1C1E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,5 +110,6 @@ Global
 		{F2AC566D-340C-4FC3-8634-AD600C8F42E1} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
 		{18ADC45C-F53D-40C2-B000-237796AC1E67} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
 		{205F9D70-68CC-4EC2-81D3-BEEA6A979609} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
+		{FF0621F5-E5F7-4D62-AC4D-428AB2E1C1E4} = {CCC8BB91-AFB4-4FDC-BE62-34F74F08B2CC}
 	EndGlobalSection
 EndGlobal

@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
+using iflytek.service.ppt2html5;
 namespace WriteDoc
 {
     class Program
     {
         static void Main(string[] args)
         {
-            TestPPT.testfunc();
+            PPTOpenXml.testfunc();
             //WriteToWordDoc(@"e:/test/WriteDoc.docx", "刘泾铭");
         }
 
